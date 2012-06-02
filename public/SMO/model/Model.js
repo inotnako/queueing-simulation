@@ -1,0 +1,22 @@
+Ext.define
+	(
+	'SMO.model.Model', 
+		{
+		extend: 'Ext.data.Model',
+		fields: 
+			[
+			'_id',
+			'lastname',
+			'firstname',
+			'gender',
+			'country',
+			'sity',
+			'age',
+			'birthday',
+			'email',
+			'username',
+			'password',
+			'type'
+			]
+		}
+	);

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title><%= title %></title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<script src="raphael/raphael-min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="raphael/graffle.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="/extjs/ext-all.js"></script>
+		<script type="text/javascript">
+		Ext.Loader.setConfig({ enabled: true });
+		Ext.application
+			(
+				{
+				name: 'SMO',
+				appFolder: 'SMO',
+				controllers: 
+					[
+					<%== $controllers %>
+					],
+				launch: function() 
+					{
+					Ext.create
+						(
+						'Ext.container.Viewport',
+							{
+							layout: 'absolute',
+							html: '______develop version_____21.05.2012'
+							}
+						);
+					}
+				}
+			);
+		</script>
+		<style>
+		div#editor-panel
+			{
+			-webkit-border-bottom-right-radius: 1em;
+			-webkit-border-bottom-left-radius: 1em;
+			-moz-border-radius-bottomright: 1em;
+			-moz-border-radius-bottomleft: 1em;
+			border-bottom-right-radius: 1em;
+			border-bottom-left-radius: 1em;
+			-webkit-border-top-right-radius: 1em;
+			-webkit-border-top-left-radius: 1em;
+			-moz-border-radius-topright: 1em;
+			-moz-border-radius-topleft: 1em;
+			border-top-right-radius: 1em;
+			border-top-left-radius: 1em;
+			background: grey;
+			color: #fff;
+			overflow-x: auto;
+			padding: 1em; 
+			}
+		div#holder
+			{
+			-webkit-border-bottom-right-radius: 1em;
+			-webkit-border-bottom-left-radius: 1em;
+			-moz-border-radius-bottomright: 1em;
+			-moz-border-radius-bottomleft: 1em;
+			border-bottom-right-radius: 1em;
+			border-bottom-left-radius: 1em;
+			-webkit-border-top-right-radius: 1em;
+			-webkit-border-top-left-radius: 1em;
+			-moz-border-radius-topright: 1em;
+			-moz-border-radius-topleft: 1em;
+			border-top-right-radius: 1em;
+			border-top-left-radius: 1em;
+			background: #fff;
+			border-color: grey;
+			border: 1px;
+			border-style: solid;
+			overflow-x: auto;
+			padding: 1em; 
+ 			margin-top: 0.5em
+			}
+		</style>
+		<link rel="stylesheet" type="text/css" href="/extjs/resources/css/ext-all-gray.css"/>
+	</head>
+  <body><%= content %></body>
+</html>

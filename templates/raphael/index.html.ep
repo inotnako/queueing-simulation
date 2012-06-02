@@ -1,0 +1,3 @@
+<div id="editor-panel"></div>
+<div id="holder"></div>
+% layout 'default', title => 'Editor';
